@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Home Section  */
+
+nav {
+    height: 18vh;
+    padding: 0vw 14vw 0vw 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 7.5vw;
+}
+
+nav .signin {
+    width: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav button {
+    font-size: 1.1vw;
+    width: 5.8vw;
+    padding: 0.7vw 1vw;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 0.4vw;
+}
+
+nav select {
+    padding: 0.7vw 1.1vw;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
