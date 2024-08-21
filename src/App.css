@@ -20,15 +20,17 @@ nav img {
 }
 
 nav .signin {
-    width: 17vw;
+    min-width: 17vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1.5vw;
 }
 
 nav button {
-    font-size: 1.1vw;
-    width: 5.8vw;
+    font-size: 1.2vw;
+    height: 7vh;
+    width: 6vw;
     padding: 0.7vw 1vw;
     color: white;
     background-color: red;
@@ -41,4 +43,137 @@ nav select {
     cursor: pointer;
     color: white;
     background-color: transparent;
+}
+
+.start {
+    height: calc(100% - 18vh);
+    width: 100%;
+    /* background-color: pink; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 9vw 8vw 4vw 8vw;
+}
+
+.start h3 {
+    text-align: center;
+    width: 46vw;
+    font-size: 4.5vw;
+}
+
+.start .starts {
+    font-size: 1.3vw;
+    letter-spacing: 0.05vw;
+    font-weight: 700;
+}
+
+.start .ready {}
+
+.start span {
+    height: 8.6vh;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start span input {
+    padding: 0vw 1.1vw;
+    height: 100%;
+    width: 27vw;
+    color: black;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 0.4vw;
+    font-size: 1.3vw;
+}
+
+.start span button {
+    font-size: 1.5vw;
+    height: 100%;
+    width: calc(100% - 28vw);
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 0.4vw;
+}
+
+@media (max-width:600px) {
+    nav {
+        height: 15vw;
+        padding: 0vw 3vw;
+        /* background-color: orange; */
+    }
+
+    nav img {
+        height: 11vw;
+    }
+
+    nav .signin {
+        width: 32vw;
+    }
+
+    .signin button {
+        width: 12vw;
+        height: 5.8vw;
+        font-size: 2.5vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .signin select {
+        height: 5.8vw;
+        width: 17vw;
+    }
+
+    .start {
+        width: 100%;
+        padding: 10vw 10vw 6vw 7vw;
+    }
+
+    .start h3 {
+        width: 100%;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .start .starts {
+        font-size: 2.7vw;
+        font-weight: 500;
+    }
+
+    .start .ready {
+        margin-top: 4vw;
+        font-size: 2.5vw;
+    }
+
+    .start span {
+        margin-top: 3vh;
+        height: 28vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .start span input {
+        height: 11vh;
+        width: 100%;
+        font-size: 2.8vw;
+        padding: 0vw 3vw;
+        border-radius: 1.3vw;
+    }
+
+    .start span input:hover{
+        border: 1px solid white;
+        color: white;
+    }
+
+    .start span button {
+        height: 9vh;
+        width: 31%;
+        font-size: 3vw;
+        border-radius: 1.3vw;
+    }
 }

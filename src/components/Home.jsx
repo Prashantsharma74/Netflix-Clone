@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
+import MainSection from './MainSection';
 
 function Home() {
 
@@ -9,13 +10,13 @@ function Home() {
         height: '100vh',
         backgroundSize: 'zoom',
         backgroundPosition: 'center',
-        backgroundSize:"1580px"
+        backgroundSize: "1580px",
     };
 
     return (
-        <div style={divStyle}>
+        <div style={divStyle} className='main'>
             <Navbar />
-            <h1>123</h1>
+            <MainSection />
         </div>
     )
 }
