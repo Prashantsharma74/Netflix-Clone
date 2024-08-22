@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar';
 import MainSection from './MainSection';
+import TrendingNow from './TrendingNow';
 
 function Home() {
 
@@ -17,6 +18,7 @@ function Home() {
         <div style={divStyle} className='main'>
             <Navbar />
             <MainSection />
+            <TrendingNow />
         </div>
     )
 }
