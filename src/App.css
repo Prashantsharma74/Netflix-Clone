@@ -103,20 +103,22 @@ nav select {
     border-radius: 0.4vw;
 }
 
+
 .trend {
+    position: relative;
     height: 100%;
     width: 100%;
-    padding: 4vw 10vw;
+    padding: 3.2vw 12vw;
     background-color: black;
 }
 
 .trend h3 {
-    font-size: 2.5vw;
+    font-size: 2.0vw;
     color: white;
 }
 
 .trend span {
-    margin-top: 1.2vw;
+    margin-top: 1.4vw;
     width: 200px;
     display: flex;
     align-items: flex-start;
@@ -124,18 +126,42 @@ nav select {
 }
 
 .trend span select {
-    height: 5.7vh;
-    width: 7vw;
-    padding: 0vw 0.5vw;
+    background-color: #0f0f0f;
+    color: #fff;
+    border-radius: 0.4vw;
+    padding: 0.7vw 0.7vw;
 }
 
 .trend .slides {
+    position: relative;
     padding: 2vw;
+    height: 60vh;
 }
 
+.trend .img-section {
+    height: 55vh;
+}
+
+
 .trend img {
+    transition: transform 0.3 ease-in;
+    position: relative;
     height: 50vh;
-    width: 13vw;
+    width: 14vw;
+    border-radius: 1vw;
+}
+
+.trend img:hover {
+    transform: scale(1.2);
+}
+
+.trend h2 {
+    font-size: 8vw;
+    bottom: 0.7vw;
+    -webkit-text-stroke: 1px #c0bbbb;
+    position: absolute;
+    color: black;
+    z-index: 2;
 }
 
 @media (max-width:600px) {
@@ -214,5 +240,47 @@ nav select {
         width: 31%;
         font-size: 3vw;
         border-radius: 1.3vw;
+    }
+
+    .trend {
+        padding: 3vw 4.2vw;
+    }
+
+    .trend h3 {
+        font-size: 3vw;
+    }
+
+    .trend span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .trend span select {
+        font-weight: 500;
+        margin-top: 1vw;
+        height: 7vw;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .trend .slides{
+        margin-top: 5vh;
+        height: 37vh;
+    }
+
+    .trend .img-section{
+        height: 35vh;
+    }
+
+    .trend img{
+        height: 30vh;
+        width: 20vw;
+    }
+
+    .trend h2{
+        bottom: 2.8vw;
     }
 }
