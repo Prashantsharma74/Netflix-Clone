@@ -2,14 +2,14 @@ import React from 'react'
 
 function GetStarted() {
     return (
-        <div>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <span>
-                <input type="text" />
-                <button>Get Started &bnsp; ></button>
+        <div className='footer'>
+            <p className='ready'>Ready to watch? Enter your email to create or restart your membership.</p>
+            <span className='end-section'>
+                <input type="text" placeholder='Email address' />
+                <button>Get Started &nbsp; ></button>
             </span>
             <div>
-                <p>Questions? <p>Call 000-800-919-1694</p></p>
+                <p className='que'>Questions? Call &nbsp;<p className="borderBottom"> 000-800-919-1694</p></p>
                 <ul>
                     {
                         details.map((detail, index) => (
@@ -17,6 +17,11 @@ function GetStarted() {
                         ))
                     }
                 </ul>
+                <select name="" id="">
+                    <option value="" selected>English</option>
+                    <option value="">हिन्दी</option>
+                </select>
+                <p>Netflix India</p>
             </div>
         </div>
     )
