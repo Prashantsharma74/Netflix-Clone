@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from './Navbar';
 import MainSection from './MainSection';
 import TrendingNow from './TrendingNow';
+import JoinNetflix from './JoinNetflix';
+import Questions from './Questions';
+import GetStarted from './GetStarted';
 
 function Home() {
 
@@ -19,6 +22,9 @@ function Home() {
             <Navbar />
             <MainSection />
             <TrendingNow />
+            <JoinNetflix />
+            <Questions />
+            <GetStarted />
         </div>
     )
 }
