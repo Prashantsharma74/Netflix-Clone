@@ -21,7 +21,7 @@ function GetStarted() {
                     <option value="" selected>English</option>
                     <option value="">हिन्दी</option>
                 </select>
-                <p>Netflix India</p>
+                <p className='netflix'>Netflix India</p>
             </div>
         </div>
     )

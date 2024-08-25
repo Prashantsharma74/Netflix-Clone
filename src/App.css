@@ -306,55 +306,44 @@ nav select {
     color: #a2a2a2;
 }
 
-.footer .que .borderBottom {
-    border-bottom: 1px solid #a2a2a2;
+.footer div {
+    color: #a2a2a2;
+    margin-left: 2vw;
 }
 
 .footer ul {
     list-style: none;
-    height: 30vh;
+    height: 27vh;
     width: 100%;
-    background-color: pink;
     color: #a2a2a2;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 3vw;
 }
 
 .footer ul li {
-    font-size: 1.2vw;
-    width: 17vw;
+    font-size: 1.1vw;
+    width: 18vw;
     display: inline-block;
-    /* Ensures li only takes up as much width as the text */
     position: relative;
-    /* For positioning the ::after pseudo-element */
-    margin-right: 1em;
-    /* display: inline-block;
-    position: relative; */
-    /* border-bottom: 1px solid #a2a2a2; */
 }
 
-.footer ul li::after {
-    content: '';
-    display: block;
-    width: auto;
-    border-bottom: 1px solid #a2a2a2;
-    position: absolute;
+.footer select {
+    margin-top: 2vw;
+    padding: 0.5vw 2vw;
+    color: white;
+    background: transparent;
+    border-radius: 0.3vw;
 }
 
-/* .footer ul li::after {
-    content: '';
-    display: block;
-    width: 20%;
-    /* Ensures the line is only as wide as the text */
-border-bottom: 1px solid #a2a2a2;
-position: absolute;
-bottom: 0;
-left: 0;
+.footer .netflix {
+    margin-top: 2vw;
+    font-size: 1.1vw;
 }
 
-*/ @media (max-width:600px) {
+@media (max-width:600px) {
     nav {
         height: 15vw;
         padding: 0vw 3vw;
@@ -532,4 +521,69 @@ left: 0;
         font-size: 5vw;
         font-weight: 100;
     }
+
+    .footer {
+        width: 100%;
+        height: 170vh;
+        padding: 4vw 4.2vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer .ready {
+        font-size: 2.7vw;
+    }
+
+    .footer .end-section {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer .end-section input {
+        height: 10vh;
+        width: 100%;
+        border-radius: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .footer .end-section button {
+        height: 10vh;
+        border-radius: 1vw;
+        margin-top: 2vw;
+        width: 29vw;
+        font-size: 2.9vw;
+    }
+
+    .footer div{
+        height: 120vh;
+    }
+
+    .footer div .que{
+        font-size: 2.8vw;
+    }
+
+    .footer ul{
+        height: 90vh;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer ul li{
+        width: 100%;
+        height: 3.5vw;
+        font-size: 2.2vw;
+    }
+
+    .footer select{
+        padding: 1.2vw 5vw;
+    }
+
+    .footer .netflix{
+        font-size: 2.4vw;
+    }
+
 }
